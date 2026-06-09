@@ -4,7 +4,12 @@
 
 ## Splash Images
 
-To brand the repository for a library, a "splash" image is created and is the first element of the README.md file.
+To brand the repository for a library, a "splash" image is created and is the first element of the README.md file. 
+
+The Splash Image for this repository:
+
+![SparkFun How To Arduino Library](docs/images/gh-banner-howto-demo.png  "SparkFun HowTo Arduino Library")
+
 
 The image uses one of the template image files contained in the [docs/images](docs/images) folder. To create a specific image, perform the following steps.
 
