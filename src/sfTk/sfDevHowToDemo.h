@@ -9,6 +9,7 @@
 #pragma once
 
 // Include the toolkit library
+#include <sfTk/sfIBus.h>
 #include <sfTk/sfToolkit.h>
 
 // A default address for our demo repo
