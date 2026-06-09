@@ -36,6 +36,9 @@ For each source file created, include the following text at the comment header a
 
 ```
 
+Change the date value as needed.
+
+
 ## Splash Images
 
 To brand the repository for a library, a "splash" image is created and is the first element of the README.md file. 
