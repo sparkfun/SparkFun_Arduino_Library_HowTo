@@ -1,6 +1,40 @@
 # Setting Up a SparkFun Arduino Library Repo
 
 
+## License
+
+SparkFun Arduino Libraries by default are published using the MIT OpenSource License. To attribute the repository with this license do the following:
+
+### Repository Licensing
+
+- In the root of the repository, include the file ***LICENSE*** that contains the text of the MIT license
+  - When creating the repository, you can specify a license type of MIT and this file is created by GitHub
+
+### README.md
+
+At the bottom of the README.md file, include the following text to indicate the license for the repository:
+
+```
+## License Information
+
+This product is ***open source***!
+
+This product is licensed using the [MIT Open Source License](https://opensource.org/license/mit)
+```
+
+### Source Code Attribution
+
+For each source file created, include the following text at the comment header at the top of the file:
+
+```c++
+/*
+ * @date 2026
+ * @copyright Copyright (c) 2026, SparkFun Electronics Inc. This project is released under the MIT License.
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+```
 
 ## Splash Images
 
@@ -32,3 +66,5 @@ The file is uploaded and available for the repo.
 
 > [!NOTE]
 > The social image is used to create preview tiles on the SparkFun Documentation landing page located at docs.sparkfun.com
+
+## README.md
