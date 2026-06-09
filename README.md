@@ -1,34 +1,33 @@
 
-![SparkFun MCP4725 Arduino Library](docs/images/gh-banner-mcp4725-ard.png  "SparkFun 12-Bit DAC Breakout - MCP4725")
+![SparkFun How To Arduino Library](docs/images/gh-banner-mcp4725-ard.png  "SparkFun HowTo Arduino Library")
 
-# SparkFun MCP4725 Arduino Library
+# SparkFun HowTo Arduino Library
 
-Arduino Library for the SparkFun MCP4725 Arduino Library
+GitHub repository that outlines how to build a modern SpakRun Arduino Library, which includes use of the SparkFun Toolkit, and Doxygen generated documentation that is published via GitHub Pages.
 
-![GitHub License](https://img.shields.io/github/license/sparkfun/SparkFun_MCP4725_Arduino_Library)
-![Release](https://img.shields.io/github/v/release/sparkfun/SparkFun_MCP4725_Arduino_Library)
-![Release Date](https://img.shields.io/github/release-date/sparkfun/SparkFun_MCP4725_Arduino_Library)
-![Documentation - build](https://img.shields.io/github/actions/workflow/status/sparkfun/SparkFun_MCP4725_Arduino_Library/build-deploy-ghpages.yml?label=doc%20build)
-[![Compile Test](https://github.com/sparkfun/SparkFun_MCP4725_Arduino_Library/actions/workflows/cross-compilation.yml/badge.svg)](https://github.com/sparkfun/SparkFun_MCP4725_Arduino_Library/actions/workflows/cross-compilation.yml)
-![GitHub issues](https://img.shields.io/github/issues/sparkfun/SparkFun_MCP4725_Arduino_Library)
+
+![GitHub License](https://img.shields.io/github/license/sparkfun/SparkFun_Arduino_Library_HowTo)
+![Release](https://img.shields.io/github/v/release/sparkfun/SparkFun_Arduino_Library_HowTo)
+![Release Date](https://img.shields.io/github/release-date/sparkfun/SparkFun_Arduino_Library_HowTo)
+![Documentation - build](https://img.shields.io/github/actions/workflow/status/sparkfun/SparkFun_Arduino_Library_HowTo/build-deploy-ghpages.yml?label=doc%20build)
+[![Compile Test](https://github.com/sparkfun/SSparkFun_Arduino_Library_HowTo/actions/workflows/cross-compilation.yml/badge.svg)](https://github.com/sparkfun/SparkFun_Arduino_Library_HowTo/actions/workflows/cross-compilation.yml)
+![GitHub issues](https://img.shields.io/github/issues/sparkfun/SparkFun_Arduino_Library_HowTo)
 
 The SparkFun MCP4725 Arduino Library provides full control over Microchip's MCP4725, a 12-bit single-channel I2C digital-to-analog converter (DAC). The MCP4725 is compatible with SparkFun's Qwiic connect system, so no soldering is required to get started. An onboard EEPROM allows the device to retain its DAC value and power-down settings across power cycles, making it ideal for applications that require a consistent analog output at startup.
 
-This library is available in the Arduino Library Manager; search for **SparkFun MCP4725**.
+
 
 This library allows you to:
 
-* Set a 12-bit DAC output value (0–4095)
-* Use fast-mode writes for high-speed waveform generation
-* Persist DAC values and power-down settings to onboard EEPROM
-* Read back the current DAC register and EEPROM contents
-* Configure three power-down modes (1 kΩ, 100 kΩ, and 500 kΩ load to GND)
+* Build a SparkFun Arduino Library repository - see the [HOWTO.md](HOWTO.md) file for details on creating a repository.
+* Implement a GitHub Action that preforms a cross-compile check of the library
+* Uses doxygen to generate documentation for the library and publish the results to GitHub Pages
 
 # Repository Contents
 
 * **/examples** - Example sketches for the library (.ino). Run these from the Arduino IDE.
 * **/src** - Source files for the library (.cpp, .h).
-* **/docs** - Datasheet for the MCP4725.
+* **/docs** - configuration files for the documentation.
 * **keywords.txt** - Keywords from this library that will be highlighted in the Arduino IDE.
 * **library.properties** - General library properties for the Arduino package manager.
 
