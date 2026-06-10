@@ -1,3 +1,4 @@
+
 # Setting Up a SparkFun Arduino Library Repo
 
 ## Creating a Repository
@@ -10,7 +11,7 @@ When creating a repository, the preferred method is to create an empty repositor
 3) Clone the repository to your local machine and switch to the **develop** branch.
 
 > [!NOTE]
-> The HowTo repo is not used as a GitHub template to create a new repository due to how GitHub displays an annoying banner on repository created from a template. 
+> The HowTo repository is not used as a GitHub template to create a new repository due to how GitHub displays an annoying banner on repository created from a template. 
 
 ## License
 
@@ -82,3 +83,82 @@ The file is uploaded and available for the repo.
 > The social image is used to create preview tiles on the SparkFun Documentation landing page located at docs.sparkfun.com
 
 ## README.md
+
+The README.md file is the main landing page for the repository and should include the following sections:
+
+- Splash Image
+- Repository Description
+- Badges (i.e. license, release version, documentation build status ...etc)
+- Library Description
+- Repository Contents
+- Documentation
+- Products That Use This Library
+- License Information
+
+## Documentation
+
+SparkFun publishes product documentation using GitHub Pages. For product getting started and overview guides, Docusaurus is used. For Code libraries - like this Arduino Library HowTo - the doxygen system is used. 
+
+### Comments
+
+The first step is adding doxygen comments to the source code files. This is done by adding special comment blocks to the source code files that are then parsed by doxygen to generate the documentation. See doxygen for specific details, or just use your favorite AI to add doxygen enable comments to the library code. 
+
+### Enabling Doxygen Documentation Generation 
+
+First copy all the contents of the ./docs directory of this repository to the new repository. This includes the doxygen configuration file, HTML custom additions and a custom css (*doxygen-awesome*).
+
+On a unix/macos system this can be done with the following command:
+
+```bash
+cp -R ./docs /path/to/new/repository
+```
+
+### Doxygen Configuration File Updates
+
+Next, the doxygen configuration file needs to be updated to reflect the new repository. Open the file ***Doxyfile***, which is located in the ***docs/doxygen*** folder and called **doxygen-config***. All updates that are made involve setting the name of this repository and and the name of the library. The following fields need to be updated:
+
+- PROJECT_NAME
+- PROJECT_BRIEF
+
+That's it.
+
+### Updating doxygen-awesome-css
+
+The doxygen-awesome-css is a custom CSS sub-repository is used to style the generated documentation. This file is located in the ***docs/doxygen*** folder and is called **doxygen-awesome.css**. To enable proper operation, the current repository is removed and re-linked into this repo. This is done by performing the following steps:
+
+- Navigate to the ***docs/doxygen*** folder in a terminal
+- Remove the current doxygen-awesome-css folder by running the following command:
+```bash
+rm -rf doxygen-awesome-css
+```
+- Link the doxygen-awesome-css repository into this folder by running the following command:
+```bash
+git submodule add https://github.com/jothepro/doxygen-awesome-css.git
+cd doxygen-awesome-css
+git checkout v2.4.2
+```
+- Commit the changes to the repository and push to GitHub
+
+Note - for more details concerning doxygen-awesome-css, see the official repository located at https://github.com/jothepro/doxygen-awesome-css
+
+### Updating the Custom HTML Additions
+
+In the folder ***docs/doxygen/doxygen-custom***, the ***header.html*** file is used to add a link to the generated documentation page header. This *fancy* link points to the github repository for the library.
+
+To update the link and title, the file must be edited, replacing all "SparkFun" entries and links, with titles and links for the new library.
+
+### Building and Publishing the Documentation
+
+#### Setup
+
+The first step is to enable GitHub Pages support on the new repository. This is done on the ***Settings > Pages*** section of the new repository. The following is done:
+
+- Set Build Source to ***GitHub Actions***
+- Check the box for ***Enforce HTTPS***
+
+#### Building the Documentation
+
+The documentation is built using the GitHub Action located in the ***.github/workflows/build-deploy-ghpages.yml*** file. To enable this action, the following steps are performed:
+
+- Copy this workflow from this How To repository to the new repository
+- If desired to build automatically after a check in, un-comment the push event trigger for the workflow.
