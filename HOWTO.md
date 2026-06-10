@@ -19,7 +19,7 @@ SparkFun Arduino Libraries by default are published using the MIT OpenSource Lic
 
 ### Repository Licensing
 
-- In the root of the repository, include the file ***LICENSE*** that contains the text of the MIT license
+- In the root of the repository, include the file ***LICENSE.md*** (or ***LICENSE***, but as .md it renders better on-line)that contains the text of the MIT license
   - When creating the repository, you can specify a license type of MIT and this file is created by GitHub
 
 ### README.md
