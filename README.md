@@ -18,8 +18,9 @@ GitHub repository that outlines how to build a modern SpakRun Arduino Library, w
 [![Compile Test](https://github.com/sparkfun/SparkFun_Arduino_Library_HowTo/actions/workflows/cross-compilation.yml/badge.svg)](https://github.com/sparkfun/SparkFun_Arduino_Library_HowTo/actions/workflows/cross-compilation.yml)
 ![GitHub issues](https://img.shields.io/github/issues/sparkfun/SparkFun_Arduino_Library_HowTo)
 
-> [!NOTE]
-> Details on how to setup a SparkFun Arduino Library are contained the [HOWTO.md](HOWTO.md) file in this repository. This file contains step-by-step instructions on how to create a SparkFun Arduino Library repository, including how to use the SparkFun Toolkit, and how to setup documentation generation and deployment using GitHub Actions and GitHub Pages.
+**NOTE:**
+
+Details on how to setup a SparkFun Arduino Library are contained the [HOWTO.md](HOWTO.md) file in this repository. This file contains step-by-step instructions on how to create a SparkFun Arduino Library repository, including how to use the SparkFun Toolkit, and how to setup documentation generation and deployment using GitHub Actions and GitHub Pages.
 
 *Enter a description of the library here*
 
