@@ -7,7 +7,6 @@ GitHub repository that outlines how to build a modern SpakRun Arduino Library, w
 
 
 ![GitHub License](https://img.shields.io/github/license/sparkfun/SparkFun_Arduino_Library_HowTo)
-![GitHub License](https://img.shields.io/github/license/sparkfun/SparkFun_MCP4725_Arduino_Library)
 ![Release](https://img.shields.io/github/v/release/sparkfun/SparkFun_Arduino_Library_HowTo)
 ![Release Date](https://img.shields.io/github/release-date/sparkfun/SparkFun_Arduino_Library_HowTo)
 ![Documentation - build](https://img.shields.io/github/actions/workflow/status/sparkfun/SparkFun_Arduino_Library_HowTo/build-deploy-ghpages.yml?label=doc%20build)
