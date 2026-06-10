@@ -63,8 +63,9 @@ This product is ***open source***!
 
 This product is licensed using the [MIT Open Source License](https://opensource.org/license/mit)
 
+---
 
-# Setting Up a SparkFun Arduino Library Repo
+## Setting Up a SparkFun Arduino Library Repo
 
 ## Creating a Repository
 
