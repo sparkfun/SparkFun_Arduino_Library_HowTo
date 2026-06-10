@@ -11,7 +11,7 @@ GitHub repository that outlines how to build a modern SpakRun Arduino Library, w
 ![Release Date](https://img.shields.io/github/release-date/sparkfun/SparkFun_Arduino_Library_HowTo)
 ![Documentation - build](https://img.shields.io/github/actions/workflow/status/sparkfun/SparkFun_Arduino_Library_HowTo/build-deploy-ghpages.yml?label=doc%20build)
 [![Compile Test](https://github.com/sparkfun/SparkFun_Arduino_Library_HowTo/actions/workflows/cross-compilation.yml/badge.svg)](https://github.com/sparkfun/SparkFun_Arduino_Library_HowTo/actions/workflows/cross-compilation.yml)
-![GitHub issues](https://img.shields.io/github/issues/sparkfun/SparkFun_Arduino_Library_HowTo/)
+![GitHub issues](https://img.shields.io/github/issues/sparkfun/SparkFun_Arduino_Library_HowTo)
 
 The SparkFun MCP4725 Arduino Library provides full control over Microchip's MCP4725, a 12-bit single-channel I2C digital-to-analog converter (DAC). The MCP4725 is compatible with SparkFun's Qwiic connect system, so no soldering is required to get started. An onboard EEPROM allows the device to retain its DAC value and power-down settings across power cycles, making it ideal for applications that require a consistent analog output at startup.
 
