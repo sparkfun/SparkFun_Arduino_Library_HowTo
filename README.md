@@ -3,8 +3,13 @@
 
 # SparkFun How To Arduino Library
 
+> [!NOTE]
+> Update this with a single sentence about this library
+
 GitHub repository that outlines how to build a modern SpakRun Arduino Library, which includes use of the SparkFun Toolkit, and Doxygen generated documentation that is published via GitHub Pages.
 
+> [!NOTE]
+> Update these links and URLs for the badges to work correctly
 
 ![GitHub License](https://img.shields.io/github/license/sparkfun/SparkFun_Arduino_Library_HowTo)
 ![Release](https://img.shields.io/github/v/release/sparkfun/SparkFun_Arduino_Library_HowTo)
@@ -13,7 +18,7 @@ GitHub repository that outlines how to build a modern SpakRun Arduino Library, w
 [![Compile Test](https://github.com/sparkfun/SparkFun_Arduino_Library_HowTo/actions/workflows/cross-compilation.yml/badge.svg)](https://github.com/sparkfun/SparkFun_Arduino_Library_HowTo/actions/workflows/cross-compilation.yml)
 ![GitHub issues](https://img.shields.io/github/issues/sparkfun/SparkFun_Arduino_Library_HowTo)
 
-> [!INFO]
+> [!NOTE]
 > Details on how to setup a SparkFun Arduino Library are contained the [HOWTO.md](HOWTO.md) file in this repository. This file contains step-by-step instructions on how to create a SparkFun Arduino Library repository, including how to use the SparkFun Toolkit, and how to setup documentation generation and deployment using GitHub Actions and GitHub Pages.
 
 *Enter a description of the library here*
@@ -35,7 +40,7 @@ This library allows you to:
 
 # Documentation
 
-> [!INFO]
+> [!NOTE]
 > *Link to documentation for this library here*
 
 * **[Library Documentation](https://docs.sparkfun.com/SparkFun_Arduino_Library_HowTo/)** - Arduino Library Documentation for this repository.
@@ -45,6 +50,9 @@ This library allows you to:
 
 
 ## Products That Use This Library
+
+> [!NOTE]
+> List the SparkFun products that use this library here
 
 * [[TODO: SKU]](https://www.sparkfun.com/) - *Product 1 Name*
 * [[TODO: SKU]](https://www.sparkfun.com/) - *Product 2 Name*
