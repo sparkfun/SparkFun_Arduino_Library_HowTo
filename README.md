@@ -19,7 +19,7 @@ When creating a repository, the preferred method is to create an empty repositor
 
 ## Creating a README.md
 
-The ***How To*** Repository (this repository) contains an example README.md file - *README_Example.md*. This provides a easily modified file to build a repository readme around.
+The ***How To*** Repository (this repository) contains an example README.md file - *README_Example.md*. This provides a easily modified file to build a repository README around.
 
 ## License
 
@@ -115,7 +115,7 @@ The first step is adding doxygen comments to the source code files. This is done
 
 First copy all the contents of the ./docs directory of this repository to the new repository. This includes the doxygen configuration file, HTML custom additions and a custom css (*doxygen-awesome*).
 
-On a unix/macos system this can be done with the following command:
+On a Unix/macos system this can be done with the following command:
 
 ```bash
 cp -R ./docs /path/to/new/repository
@@ -171,3 +171,20 @@ The documentation is built using the GitHub Action located in the ***.github/wor
 - Copy this workflow from this How To repository to the new repository
 - If desired to build automatically after a check in, un-comment the push event trigger for the workflow.
 
+## Setup the Repository About Content
+
+On the main code page of the repository, the "About" section (upper right side of the page) contains meta information about the repository and also sets the topics/tags that are used to automatically add the repository to the sparkfun documentation landing page (docs.sparkfun.com).
+
+The set About information, select the ***gear*** icon in the section. From here, the following sections are updated
+
+### Description 
+
+Add a detailed, one sentence description for the repository. This is often the same sentence used in the ```libraries.properties``` file. 
+
+### Website
+
+Select the ***Use your GitHub Pages Website*** option for the repository website. NOTE: If the website is not *https* enabled, check your GitHub pages settings for the repository and ensure the *enforce HTTPS* option is checked.
+
+### Topics
+
+The topics section should be setup to match what is needed for the SparkFun documentation landing page. For the specifics, consult the [documentation landing page readme file](https://github.com/sparkfun/sparkfun.github.io/blob/main/README.md#tags).
